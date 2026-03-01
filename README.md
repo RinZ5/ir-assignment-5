@@ -21,7 +21,7 @@
    - `manual_indexer.pkl`
    - `pagerank_scores.pkl`
 
-    5.1. If .pkl files are missing in resource/, run:
+    If .pkl files are missing in resource/, run:
     ```bash
     python crawler.py
     python indexer.py
