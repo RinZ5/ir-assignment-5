@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="../static/css/results.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="/" class="logo">
+            SearchEngine
+        </a>
+        <form action=" /results" method="GET" id="search-form">
+            <input type="text" name="query" class="search-box" id="query-input">
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="column left-col">
+            <h2>Elasticsearch BM25 + PageRank</h2>
+            <div id="es-meta" class="meta">Loading results...</div>
+            <div id="es-results"></div>
+        </div>
+        <div class="column right-col">
+            <h2>Customized TF-IDF + PageRank</h2>
+            <div id="manual-meta" class="meta">Loading results...</div>
+            <div id="manual-results"></div>
+        </div>
+    </div>
+
+    <script src="../static/js/results.js"></script>
+</body>
+
+</html>
